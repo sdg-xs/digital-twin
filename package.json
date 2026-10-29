@@ -1,0 +1,22 @@
+{
+  "name": "hemy-sol10-digital-twin",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "^22.12.0 || >=24.0.0" },
+  "scripts": {
+    "prepare-worker": "node scripts/prepare-worker.mjs",
+    "predev": "npm run prepare-worker",
+    "dev": "vite --host 127.0.0.1 --port 4174",
+    "prebuild": "npm run prepare-worker",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort"
+  },
+  "dependencies": {
+    "@thatopen/fragments": "3.6.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "three": "0.186.1"
+  },
+  "devDependencies": { "vite": "8.3.4" }
+}
